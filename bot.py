@@ -1,6 +1,7 @@
-#import config vars from heroku
 #import os
-#token = os.environ['TOKEN']
-#some_api_token = os.environ['SOME_API_TOKEN']
+
+#import config vars from heroku (like username and password)
+#username = os.environ['username']
+#password = os.environ['password']
 
 print(42)
