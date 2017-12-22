@@ -16,7 +16,7 @@ Contains all of your python code and is called when you start the bot
 ### Procfile
 Calls bot.py when you start the bot. 'worker' is arbitrary but must be the same as specified in the Procfile
 
-`heroku ps:scale worker=1 #starts bot.py`
+`Start your bot with: heroku ps:scale worker=1`
 
 ### requirements.txt
 Lists all required packages to be downloaded by heroku on deployment. Here, you can **list every module you import** in the python file. **Dont include out of the box modules like time or traceback!** Leave empty if in doubt.
