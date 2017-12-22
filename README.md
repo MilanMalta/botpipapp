@@ -27,10 +27,24 @@ Specify the python version to be used.
 ## Deployment Crash-Course
 
 **1. Download the [heroku cli](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)**
+```sh
+$ heroku login
+```
 
 **2. [Clone my repo](https://devcenter.heroku.com/articles/getting-started-with-python#prepare-the-app)**
+```sh
+$ git clone https://github.com/972C8/simple_heroku_bot.git
+$ cd simple_heroku_bot
+```
 
 **3. [Push the cloned repo to heroku](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app)**
+```sh
+$ heroku create
+$ git push heroku master
+$ heroku ps:scale worker=1 #start the bot
+$ heroku logs --tail
+$ heroku ps:scale worker=0 #stop the bot
+```
 
 ## Contributing
 Feel free to contribute to either the code example or the documentation.
