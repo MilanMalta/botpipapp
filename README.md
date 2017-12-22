@@ -15,6 +15,7 @@ Contains all of your python code and is called when you start the bot
 
 ### Procfile
 Calls bot.py when you start the bot. 'worker' is arbitrary but must be the same as specified in the Procfile
+
 `heroku ps:scale worker=1 #starts bot.py`
 
 ### requirements.txt
