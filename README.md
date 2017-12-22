@@ -2,13 +2,14 @@
 Complete and simple example to host your python bot on Heroku
 
 ## Note
-**I highly recommend reading about the [heroku cli](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) to understand the required commands for a successful deployment!**
+**I highly recommend reading about the [heroku cli](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) to setup heroku for a successful deployment!**
 
-## Explanation of files
-There are only two required files in this repo for a successful deployment to heroku:
+There are three required files in this repo for a successful deployment to heroku:
 - 'bot.py': This is your python code
 - 'Procfile': This calls the python-file when you start your bot with heroku 'ps:scale worker=1'
+- requirements.txt (can be empty)
 
+## Explanation of files
 ### bot.py
 Contains all of your python code and is called when you start the bot
 
